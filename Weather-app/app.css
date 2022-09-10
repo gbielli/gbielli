@@ -1,0 +1,206 @@
+:root {
+	--gradient: linear-gradient(147deg, #FFE53B 0%, #FF2525 74%);
+    --gradientsol : linear-gradient(0deg, #08AEEA 0%, #2AF598 100%);
+}
+
+
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    font-family: poppins;
+    
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 54px;
+    color:white;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 36px;
+    color:white;
+}
+
+.card-title, .card-meteo {
+    z-index: 10;
+}
+
+
+body {
+    background-color:#343D4B;
+}
+
+.today-info div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom:5px;
+}
+
+.today-info div .title {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.container {
+    margin:auto;
+    display: flex;
+    max-width:600px;
+    height:400px;
+    position:absolute;
+    top: calc(30% - 1px);
+    left:0;
+    right:0;
+}
+
+.localisation {
+    display: flex;
+    align-items: center;
+    gap:3px;
+}
+
+.svg-hidden {
+    visibility: hidden;
+    position:absolute;
+}
+
+.svg-active {
+    visibility: active;
+}
+
+.weather-side {
+    background-image:url("./toulouse-bg.jpeg");
+    background-size:cover;
+    flex:1;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position:relative;
+    transform: translateZ(0) scale(1.02) perspective(1000px);
+    float: left;
+    border-radius:15px;
+    color:white;
+}
+
+.wheater-gradient {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top:0;
+    left:0;
+    background-image:var(--gradient);
+    opacity: 0.7;
+    z-index: 1;
+    border-radius:15px;
+}
+
+.wheater-gradient-sadly {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top:0;
+    left:0;
+    background-image:var(--gradientsol);
+    opacity: 0.7;
+    z-index: 1;
+    border-radius:15px;
+}
+
+.information-side {
+    flex:1;
+    padding: 2rem;
+    background-color: #212730;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color:white;
+}
+
+.prevision {
+    display:flex;
+    background-color: #fff;
+    margin-top:30px;
+    margin-bottom:30px;
+    border-radius:12px;
+    background-color:#343d4b;
+}
+
+.prevision div {
+    padding: 0.7rem 0.8rem;
+    background-color: #343d4b;
+    border-radius:12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:8px;
+    width: 100%;
+    cursor:pointer;
+}
+
+.prevision div:hover {
+    transform:scale(1.1);
+    transition:0.3s;
+    background-color: #fff;
+    color:black;
+    
+
+}
+
+*[class^="prevision-day"] {
+    color:rgb(255, 255, 255);
+}
+
+
+.prevision div .degree {
+    font-weight: 700;
+}
+
+
+.change-location button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #fff;
+    text-decoration: none;
+    border:none;
+    width: 100%;
+    padding:10px 5px;
+    background-image:var(--gradient);
+    border-radius: 8px;
+    justify-content: center;
+    color:white;
+    cursor:pointer;
+    
+}
+
+
+
+
+
+.change-location button p {
+    color:white;
+    z-index: 10;
+}
+
