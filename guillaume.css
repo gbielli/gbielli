@@ -310,6 +310,8 @@ flex-grow: 1;
     margin-right:calc(10% - 2em);
 }
 
+
+
 @media screen and (max-width:1051px) {
     .competence {margin-top:4rem;
     justify-content: center;}
