@@ -11,7 +11,7 @@ changeLocation.addEventListener('click', function() {
     
    var inputZ = document.getElementById('inputAdresse')
     if (inputZ.style.display == "none") {
-        inputZ.style.display = "block";
+        inputZ.style.display = "flex";
     } else {
         inputZ.style.display  = "none";
     }
@@ -56,7 +56,7 @@ function displaySelection(response) {
     };
 
     function selectAdresse(element) {
-        document.getElementById("adresse").value = element.properties.name + "\r\n" + element.properties.postcode + " " + element.properties.city;
+        document.getElementById("adresse").value = element.properties.name + " " + element.properties.postcode + " " + element.properties.city;
         select.style.display = "none";
         
     };
