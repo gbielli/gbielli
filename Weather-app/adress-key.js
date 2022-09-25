@@ -1,3 +1,4 @@
+
 var requestURL = 'https://api-adresse.data.gouv.fr/search/?q=';
  var select = document.getElementById("selection");
 
@@ -67,8 +68,11 @@ function displaySelection(response) {
 
 
 
-
-
+    $( "#clickme" ).click(function() {
+        $( "#book" ).slideToggle( "slow", function() {
+          // Animation complete.
+        });
+      });
 
 
 

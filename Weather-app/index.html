@@ -8,12 +8,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swap" rel="stylesheet">
     <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <link rel="stylesheet" href="app.css">
+    <script src="app.js" defer></script>
+    <script src="adress-key.js" defer></script>
     <title>Document</title>
 </head>
 
 
 <body>
+
+    <div id="like_button_container"></div>
 
     <div class="container">
 
@@ -78,7 +83,7 @@
                     <p class="day">Ven</p>
                     <p class="degree">19°C</p>
                 </div>
-
+               
                
             </div>
 
@@ -94,7 +99,7 @@
 
         </div>
         <div class="inputAdresse" id="inputAdresse">
-            <div class="inputSearch">
+            <div class="inputSearch" id ="inputSearch">
                 <span style="display:flex;padding: 10px 10px;"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
                 </span>
                 <input id="adresse" class="input-address" type="text" placeholder="Saissisez votre adresse">
@@ -104,10 +109,10 @@
 
             </div>
         </div>
+
        
-    
+
 </body>
-<script src="adress-key.js" defer></script>
 
 
 </html>
