@@ -22,8 +22,3 @@ if (mois == 8) {
 }
 
 document.getElementById('date').innerHTML = jourMois + " " + mois + " " + annee;
-
-
-
-
-/** API KEY : 5c37fddcf2e334cfbe70e6760dd88160 */
